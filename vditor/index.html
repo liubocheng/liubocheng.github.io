@@ -109,7 +109,9 @@ $$
     const value = localStorage.getItem(cacheKey) || initialValue
 
     const vditor = new Vditor("vditor", {
+      cdn: "https://cdn.jsdelivr.net/npm/vditor",
       height: 640,
+      lang: "zh_CN",
       mode: "sv",
       theme: "classic",
       counter: { enable: true },
