@@ -1,8 +1,0 @@
-{
-  "name": "Project Pulse",
-  "short_name": "Pulse",
-  "start_url": "/pulse/",
-  "display": "standalone",
-  "background_color": "#0a0a14",
-  "theme_color": "#0a0a14"
-}
