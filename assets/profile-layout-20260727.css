@@ -1,56 +1,4 @@
 /* Profile layout refinement approved on 2026-07-27. */
-.resume-shell {
-  display: flex !important;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.resume-shell > .sidebar {
-  position: static;
-  width: 100%;
-  min-height: 0;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns:
-    minmax(260px, 1.1fr)
-    minmax(260px, 1fr)
-    minmax(260px, 1fr)
-    minmax(240px, 0.9fr);
-  gap: 24px;
-  align-items: stretch;
-}
-
-.resume-shell > .sidebar .identity {
-  box-sizing: border-box;
-  align-self: stretch;
-  padding: 0 24px 0 0 !important;
-  border-right: 1px solid var(--agent-line, #e7e9ed);
-  border-bottom: 0 !important;
-}
-
-.resume-shell > .sidebar > section {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0 24px 0 0 !important;
-  border-right: 1px solid var(--agent-line, #e7e9ed);
-}
-
-.resume-shell > .sidebar > section:last-child {
-  padding-right: 0 !important;
-  border-right: 0;
-}
-
-.resume-shell > .sidebar .sidebar-note {
-  min-height: 100%;
-  margin: 0 !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resume-shell > .content {
-  width: 100%;
-}
 
 .sidebar-note > span {
   font-family: inherit;
@@ -212,23 +160,6 @@
 }
 
 @media (max-width: 760px) {
-  .resume-shell > .sidebar {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .resume-shell > .sidebar .identity,
-  .resume-shell > .sidebar > section {
-    padding: 0 0 20px !important;
-    border-right: 0;
-    border-bottom: 1px solid var(--agent-line, #e7e9ed);
-  }
-
-  .resume-shell > .sidebar > section:last-child {
-    padding-bottom: 0 !important;
-    border-bottom: 0;
-  }
-
   .intro-panel .section-label {
     margin-bottom: 22px;
   }
@@ -292,27 +223,5 @@
   .intro-copy > p:not(.lead) {
     margin-bottom: 14px;
     line-height: 1.65;
-  }
-}
-
-@media (min-width: 761px) and (max-width: 1180px) {
-  .resume-shell > .sidebar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .resume-shell > .sidebar .identity,
-  .resume-shell > .sidebar > section {
-    padding: 0 20px 20px 0 !important;
-    border-right: 0;
-    border-bottom: 1px solid var(--agent-line, #e7e9ed);
-  }
-
-  .resume-shell > .sidebar > section:nth-child(even) {
-    padding-right: 0 !important;
-  }
-
-  .resume-shell > .sidebar > section:nth-last-child(-n + 2) {
-    padding-bottom: 0 !important;
-    border-bottom: 0;
   }
 }
