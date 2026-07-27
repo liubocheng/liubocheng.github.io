@@ -1,4 +1,9 @@
 /* Profile layout refinement approved on 2026-07-27. */
+.sidebar-note > span {
+  font-family: inherit;
+  letter-spacing: 0;
+}
+
 .intro-panel {
   display: block;
 }
