@@ -345,3 +345,142 @@
     line-height: 1.65;
   }
 }
+
+/* Time-based theme: light from 07:00 to 19:59, dark from 20:00 to 06:59. */
+html {
+  color-scheme: light;
+}
+
+html[data-time-theme="dark"] {
+  color-scheme: dark;
+  --agent-ink: #f2f4f7;
+  --agent-muted: #aeb5bf;
+}
+
+html[data-time-theme="dark"],
+html[data-time-theme="dark"] body,
+html[data-time-theme="dark"] main {
+  background: #111419 !important;
+  color: #eef1f5 !important;
+}
+
+html[data-time-theme="dark"] .topbar {
+  border-color: #303640 !important;
+  background: rgb(17 20 25 / 92%) !important;
+  color: #eef1f5 !important;
+}
+
+html[data-time-theme="dark"] .topbar a,
+html[data-time-theme="dark"] .topbar span {
+  color: #c5cbd3 !important;
+}
+
+html[data-time-theme="dark"] .sidebar,
+html[data-time-theme="dark"] .content > section {
+  border-color: #303640 !important;
+  background: #191d23 !important;
+  box-shadow: 0 12px 34px rgb(0 0 0 / 22%) !important;
+}
+
+html[data-time-theme="dark"] .identity,
+html[data-time-theme="dark"] .section-label,
+html[data-time-theme="dark"] .content footer {
+  border-color: #303640 !important;
+}
+
+html[data-time-theme="dark"] .identity h1,
+html[data-time-theme="dark"] .section-label h2,
+html[data-time-theme="dark"] .intro-copy .lead,
+html[data-time-theme="dark"] .hobby > p,
+html[data-time-theme="dark"] footer,
+html[data-time-theme="dark"] footer a {
+  color: #eef1f5 !important;
+}
+
+html[data-time-theme="dark"] .identity p,
+html[data-time-theme="dark"] .section-label > p,
+html[data-time-theme="dark"] .experience-section .section-label::after,
+html[data-time-theme="dark"] .intro-copy > p:not(.lead) {
+  color: #aeb5bf !important;
+}
+
+html[data-time-theme="dark"] .sidebar button,
+html[data-time-theme="dark"] .sidebar-note,
+html[data-time-theme="dark"] .intro-copy .achievement,
+html[data-time-theme="dark"] .chart-grid article {
+  border-color: #343b45 !important;
+  background: #22272f !important;
+}
+
+html[data-time-theme="dark"] .sidebar button,
+html[data-time-theme="dark"] .sidebar button b,
+html[data-time-theme="dark"] .sidebar p,
+html[data-time-theme="dark"] .sidebar .school,
+html[data-time-theme="dark"] .sidebar-note p {
+  color: #b8bec7 !important;
+}
+
+html[data-time-theme="dark"] .sidebar-note > span,
+html[data-time-theme="dark"] .achievement-heading h3,
+html[data-time-theme="dark"] .achievement-metrics b {
+  color: #f4f6f8 !important;
+}
+
+html[data-time-theme="dark"] .achievement-heading span {
+  color: #929aa5 !important;
+}
+
+html[data-time-theme="dark"] .achievement-metrics p,
+html[data-time-theme="dark"] .experience-section .job,
+html[data-time-theme="dark"] .project-card,
+html[data-time-theme="dark"] .project-trigger,
+html[data-time-theme="dark"] .project-body {
+  border-color: #343b45 !important;
+  background: #1e232a !important;
+  color: #e8ebef !important;
+}
+
+html[data-time-theme="dark"] .experience-section .job:hover,
+html[data-time-theme="dark"] .project-card:hover,
+html[data-time-theme="dark"] .project-card.active {
+  border-color: #505966 !important;
+}
+
+html[data-time-theme="dark"] .experience-section .job time,
+html[data-time-theme="dark"] .experience-section .job ul,
+html[data-time-theme="dark"] .project-trigger p,
+html[data-time-theme="dark"] .project-body p,
+html[data-time-theme="dark"] .project-body small,
+html[data-time-theme="dark"] .chart-grid li {
+  color: #aeb5bf !important;
+}
+
+html[data-time-theme="dark"] .experience-section .job h3,
+html[data-time-theme="dark"] .experience-section .job strong,
+html[data-time-theme="dark"] .experience-section .job::after,
+html[data-time-theme="dark"] .project-trigger h3,
+html[data-time-theme="dark"] .project-trigger i,
+html[data-time-theme="dark"] .project-body h4,
+html[data-time-theme="dark"] .project-body a,
+html[data-time-theme="dark"] .chart-grid b {
+  color: #eef1f5 !important;
+}
+
+html[data-time-theme="dark"] .experience-section .job.active > ul,
+html[data-time-theme="dark"] .project-card.active .project-body,
+html[data-time-theme="dark"] .project-body li,
+html[data-time-theme="dark"] .chart-grid li {
+  border-color: #343b45 !important;
+}
+
+html[data-time-theme="dark"] .project-card.active .project-trigger {
+  background: #282e37 !important;
+}
+
+html[data-time-theme="dark"] .donut::before {
+  background: #22272f !important;
+}
+
+html[data-time-theme="dark"] .identity img {
+  filter: brightness(0.86) contrast(1.08);
+}
