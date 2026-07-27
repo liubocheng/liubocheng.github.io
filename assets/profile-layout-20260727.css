@@ -1,0 +1,181 @@
+/* Profile layout refinement approved on 2026-07-27. */
+.intro-panel {
+  display: block;
+}
+
+.intro-panel .section-label {
+  display: block;
+  margin-bottom: 30px;
+  padding: 0;
+  border: 0;
+}
+
+.intro-panel .section-label span {
+  width: 64px;
+  height: 48px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+.intro-panel .section-label h2 {
+  margin: 0;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+.intro-copy {
+  width: 100%;
+  font-size: clamp(16px, 1.45vw, 22px);
+  line-height: 1.9;
+}
+
+.intro-copy .lead {
+  margin-bottom: 28px;
+  font-size: clamp(19px, 1.8vw, 27px);
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.intro-copy .achievement {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 34px;
+  padding: 28px 32px 32px;
+  overflow: visible;
+  border: 2px solid #e1e2e3;
+  border-radius: 24px;
+  background: #f7f7f7;
+  box-shadow: none;
+}
+
+.intro-copy .achievement::after {
+  display: none;
+}
+
+.achievement-heading {
+  margin-bottom: 22px;
+}
+
+.achievement-heading h3 {
+  color: #25282b;
+  font-size: clamp(20px, 1.8vw, 28px);
+}
+
+.achievement-heading span {
+  display: inline;
+  color: #777b80;
+  font-size: 11px;
+}
+
+.achievement-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.achievement-metrics p {
+  min-height: 104px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 24px;
+  border: 1px solid #dedfe0;
+  border-radius: 18px;
+  background: #fff;
+  font-size: clamp(15px, 1.35vw, 20px);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.achievement-metrics br {
+  display: none;
+}
+
+.achievement-metrics b {
+  margin: 0 8px;
+  color: #25282b;
+  font-size: clamp(34px, 3.5vw, 52px);
+}
+
+.intro-copy > p:not(.lead) {
+  width: 100%;
+  margin: 0 0 22px;
+  color: #2f3235;
+  line-height: 1.9;
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-ideograph;
+  overflow-wrap: anywhere;
+}
+
+.intro-copy > p:not(.lead):last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .intro-panel .section-label {
+    margin-bottom: 22px;
+  }
+
+  .intro-panel .section-label span {
+    width: 50px;
+    height: 38px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .intro-panel .section-label h2 {
+    font-size: 34px;
+  }
+
+  .intro-copy {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .intro-copy .lead {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .intro-copy .achievement {
+    margin-bottom: 26px;
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .achievement-heading {
+    margin-bottom: 16px;
+  }
+
+  .achievement-heading h3 {
+    font-size: 20px;
+  }
+
+  .achievement-heading span {
+    display: none;
+  }
+
+  .achievement-metrics {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .achievement-metrics p {
+    min-height: 82px;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+
+  .achievement-metrics b {
+    font-size: 32px;
+  }
+
+  .intro-copy > p:not(.lead) {
+    margin-bottom: 18px;
+    line-height: 1.85;
+  }
+}
