@@ -54,30 +54,10 @@
 
 .sidebar-note > span {
   font-family: inherit;
-  font-size: 34px !important;
-  font-weight: 800;
-  line-height: 1;
   letter-spacing: 0;
 }
 
-.resume-shell > .sidebar .sidebar-note {
-  display: grid !important;
-  grid-template-columns: auto minmax(0, 1fr);
-  grid-template-rows: auto 1fr;
-  column-gap: 18px;
-  row-gap: 16px;
-  align-items: center;
-  justify-content: stretch;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-.resume-shell > .sidebar .sidebar-note::before {
-  content: "经验概览";
-  grid-column: 1 / -1;
+.resume-shell > .sidebar > section:not(.sidebar-note) h2 {
   color: var(--agent-ink, #252a32);
   font-size: 14px;
   font-weight: 800;
@@ -85,16 +65,34 @@
   letter-spacing: 0.04em;
 }
 
-.resume-shell > .sidebar .sidebar-note::after {
-  display: none !important;
-}
-
-.resume-shell > .sidebar .sidebar-note p {
-  margin: 0;
+.resume-shell > .sidebar > section:not(.sidebar-note) button,
+.resume-shell > .sidebar > section:not(.sidebar-note) p {
   color: var(--agent-muted, #747b85) !important;
-  font-size: 13px;
+  font-family: inherit;
+  font-size: 13px !important;
   font-weight: 600;
   line-height: 1.7;
+}
+
+.resume-shell > .sidebar > section:not(.sidebar-note) button {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.resume-shell > .sidebar > section:not(.sidebar-note) button b {
+  color: var(--agent-muted, #747b85) !important;
+  border-bottom: 0 !important;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.resume-shell > .sidebar > section:not(.sidebar-note) .school {
+  color: var(--agent-muted, #747b85) !important;
+  font-size: 13px !important;
+  font-weight: 600;
 }
 
 .intro-panel {
