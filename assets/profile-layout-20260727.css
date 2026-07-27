@@ -181,6 +181,7 @@
 .experience-section .job::after {
   content: "+";
   grid-column: 5;
+  grid-row: 1;
   align-self: center;
   justify-self: center;
   color: #30353c;
