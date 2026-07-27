@@ -483,6 +483,12 @@ body:not([data-time-theme="light"]) .project-card.active .project-trigger {
   background: #282e37 !important;
 }
 
+body:not([data-time-theme="light"]) .project-card.active .project-body {
+  border-top-color: #414955 !important;
+  background: #1e232a !important;
+  color: #e8ebef !important;
+}
+
 body:not([data-time-theme="light"]) .donut::before {
   background: #22272f !important;
 }
