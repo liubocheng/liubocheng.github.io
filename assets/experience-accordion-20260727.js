@@ -43,14 +43,11 @@
     });
   };
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", setup, { once: true });
+  if (document.readyState === "complete") {
+    window.setTimeout(setup, 0);
   } else {
-    setup();
+    window.addEventListener("load", () => window.setTimeout(setup, 0), {
+      once: true,
+    });
   }
-
-  new MutationObserver(setup).observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-  });
 })();
