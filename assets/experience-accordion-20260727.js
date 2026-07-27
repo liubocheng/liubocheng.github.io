@@ -15,6 +15,25 @@
   };
 
   const setup = () => {
+    document.querySelectorAll(".achievement-metrics span").forEach((item) => {
+      if (item.textContent === "产品需求分析及原型设计") {
+        item.textContent = "通用产品全过程需求分析及原型设计";
+      }
+    });
+
+    document.querySelectorAll(".project-body p").forEach((item) => {
+      if (
+        item.textContent.includes(
+          "基于运营后台对用户及产品进行数据分析，融合业务和销售数据"
+        )
+      ) {
+        item.textContent = item.textContent.replace(
+          "基于运营后台对用户及产品进行数据分析，融合业务和销售数据",
+          "基于对用户及产品进行运营数据分析，融合业务和销售数据"
+        );
+      }
+    });
+
     document.querySelectorAll(selector).forEach((job) => {
       const company = job.querySelector("h3");
       const role = job.querySelector("strong");
