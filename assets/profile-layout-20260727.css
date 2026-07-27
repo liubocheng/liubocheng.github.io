@@ -455,6 +455,12 @@ body:not([data-time-theme="light"]) .chart-grid li {
   color: #aeb5bf !important;
 }
 
+body:not([data-time-theme="light"]) .experience-section .job-mark i {
+  border-color: #555e6a !important;
+  background: #2b3139 !important;
+  color: #eef1f5 !important;
+}
+
 body:not([data-time-theme="light"]) .experience-section .job h3,
 body:not([data-time-theme="light"]) .experience-section .job strong,
 body:not([data-time-theme="light"]) .experience-section .job::after,
