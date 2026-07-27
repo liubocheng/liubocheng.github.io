@@ -66,13 +66,13 @@
   };
 
   if (document.readyState === "complete") {
-    window.setTimeout(setup, 0);
+    window.setTimeout(setup, 800);
     window.setTimeout(setupTimeTheme, 800);
   } else {
     window.addEventListener(
       "load",
       () => {
-        window.setTimeout(setup, 0);
+        window.setTimeout(setup, 800);
         window.setTimeout(setupTimeTheme, 800);
       },
       { once: true }
