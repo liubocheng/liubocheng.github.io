@@ -19,7 +19,11 @@
       const company = job.querySelector("h3");
       const role = job.querySelector("strong");
 
-      if (company?.textContent.includes("棋至文化") && role) {
+      if (
+        company?.textContent.includes("棋至文化") &&
+        role &&
+        role.textContent !== "C 端产品经理"
+      ) {
         role.textContent = "C 端产品经理";
       }
 
