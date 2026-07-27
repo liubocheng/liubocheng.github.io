@@ -159,7 +159,117 @@
   margin-bottom: 0;
 }
 
+.experience-section .section-label::after {
+  content: "点击经历查看详细内容";
+  margin-left: auto;
+  color: #8a9098;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.experience-section .job {
+  grid-template-columns:
+    42px
+    118px
+    minmax(190px, 1fr)
+    102px
+    36px !important;
+  cursor: pointer;
+  outline: none;
+}
+
+.experience-section .job::after {
+  content: "+";
+  grid-column: 5;
+  align-self: center;
+  justify-self: center;
+  color: #30353c;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.experience-section .job.active::after {
+  content: "−";
+}
+
+.experience-section .job:focus-visible {
+  border-color: #9da3aa !important;
+  box-shadow: 0 0 0 3px rgb(77 83 91 / 12%) !important;
+}
+
+.experience-section .job > ul {
+  grid-column: 2 / -1;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition:
+    max-height 0.32s ease,
+    margin-top 0.24s ease,
+    padding-top 0.24s ease,
+    opacity 0.22s ease,
+    transform 0.24s ease;
+}
+
+.experience-section .job.active > ul {
+  max-height: 360px;
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #e7e9ed;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .experience-section .job {
+    grid-template-columns:
+      42px
+      112px
+      minmax(0, 1fr)
+      92px
+      34px !important;
+  }
+
+  .experience-section .job > ul {
+    grid-column: 2 / -1 !important;
+  }
+}
+
 @media (max-width: 760px) {
+  .experience-section .section-label::after {
+    display: none;
+  }
+
+  .experience-section .job {
+    grid-template-columns: 38px minmax(0, 1fr) 34px !important;
+  }
+
+  .experience-section .job .job-mark {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .experience-section .job time,
+  .experience-section .job h3,
+  .experience-section .job strong {
+    grid-column: 2;
+  }
+
+  .experience-section .job::after {
+    grid-column: 3;
+    grid-row: 1 / 4;
+  }
+
+  .experience-section .job > ul {
+    grid-column: 2 / 4 !important;
+  }
+
   .intro-panel .section-label {
     margin-bottom: 22px;
   }
