@@ -21,18 +21,31 @@
       }
     });
 
-    document.querySelectorAll(".project-body p").forEach((item) => {
-      if (
-        item.textContent.includes(
-          "基于运营后台对用户及产品进行数据分析，融合业务和销售数据"
-        )
-      ) {
-        item.textContent = item.textContent.replace(
-          "基于运营后台对用户及产品进行数据分析，融合业务和销售数据",
-          "基于对用户及产品进行运营数据分析，融合业务和销售数据"
-        );
-      }
-    });
+    document
+      .querySelectorAll(".project-body p, .experience-section .job li")
+      .forEach((item) => {
+        if (
+          item.textContent.includes(
+            "基于运营后台对用户及产品进行数据分析，融合业务和销售数据"
+          )
+        ) {
+          item.textContent = item.textContent.replace(
+            "基于运营后台对用户及产品进行数据分析，融合业务和销售数据",
+            "基于对用户及产品进行运营数据分析，融合业务和销售数据"
+          );
+        }
+
+        if (
+          item.textContent.includes(
+            "包括面向政府支付服务的 18+ 能力组件构成的“1+3”能力域"
+          )
+        ) {
+          item.textContent = item.textContent.replace(
+            "包括面向政府支付服务的 18+ 能力组件构成的“1+3”能力域",
+            "包括面向政府支付服务 18+ 能力组件构成“1+3”能力域"
+          );
+        }
+      });
 
     document.querySelectorAll(selector).forEach((job) => {
       const company = job.querySelector("h3");
