@@ -54,7 +54,47 @@
 
 .sidebar-note > span {
   font-family: inherit;
+  font-size: 34px !important;
+  font-weight: 800;
+  line-height: 1;
   letter-spacing: 0;
+}
+
+.resume-shell > .sidebar .sidebar-note {
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: 18px;
+  row-gap: 16px;
+  align-items: center;
+  justify-content: stretch;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.resume-shell > .sidebar .sidebar-note::before {
+  content: "经验概览";
+  grid-column: 1 / -1;
+  color: var(--agent-ink, #252a32);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.resume-shell > .sidebar .sidebar-note::after {
+  display: none !important;
+}
+
+.resume-shell > .sidebar .sidebar-note p {
+  margin: 0;
+  color: var(--agent-muted, #747b85) !important;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 .intro-panel {
